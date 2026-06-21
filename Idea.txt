@@ -1,0 +1,13 @@
+La ideas central del programa seria
+
+ingresas si deseas cancion o playlists
+    ingresas url de cancion o playlists
+        sistema obtiene y descarga playlists
+            mensaje de exito
+
+            si quieres video 
+            elijes V para video
+            elijes la calidad del video
+            descargas el video
+            mensaje de exito
+
