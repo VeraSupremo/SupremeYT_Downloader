@@ -26,14 +26,6 @@ def resource_path(relative_path):
 
 ventana.iconbitmap(resource_path("icons/SupremDowloader.ico"))
 
-##estilo = ttk.Style()
-##estilo.theme_use('winnative')
-##FUENTE = ("MS Sans Serif", 8)
-##estilo.configure('TLabel', font=FUENTE, padding=6)
-# Fondo sólido clásico (gris plata)
-##frame = tk.Frame(ventana, bg="#c0c0c0")
-##frame.pack(expand=True, fill="both")
-
 
 ## intento de estilo de windows vista
 try:
@@ -62,7 +54,7 @@ def log_terminal(mensaje):
     ventana.update_idletasks()
 
 def hook_terminal(d):
-    """Hook que escribe el progreso en la terminal."""
+    """escribe el progreso en la terminal."""
     if d['status'] == 'downloading':
         nombre = d.get('filename', 'Desconocido')
         # Extraer solo el nombre del archivo
