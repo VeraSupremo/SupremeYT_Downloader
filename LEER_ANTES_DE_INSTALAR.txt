@@ -1,0 +1,32 @@
+paso 1:copia todos los archivos de la carpeta bin del ffmpeg
+
+paso 2:  ve a tu disco local y crea una carpeta llamada ffmpeg
+
+paso 3:  pega los datos copiados y copia la direccion de la carpeta 
+
+paso 4:  ve a info del sistema y selecciona conficguracion avanzada
+
+paso 5: ve a variables de entorno, selecciona path y selecciona agregar nuevo.
+
+paso 6: copia la ruta en el nuevo dato del path y pone aceptar en todo.
+
+paso 7: reinicia y abre el ejecutable
+
+
+
+-Si completaste los pasos anteriores o ya lo tenias sigue los siguientes pasos:
+
+- Has doble click en el archivo ejecutable
+
+asegúrate de tener conexión a internet
+** Si Windows detecta la app como riesgosa debes quitarla de la lista negra
+de Windows defender.
+
+- sigue los pasos que indica el programa 
+
+
+si quieres descargar videos:
+	1) Asegúrate que el enlace sea de YouTube
+	2) Pega el enlace y selecciona descargar video
+	3) espera a que se descargue.
+* Cabe recalcar que el archivo que dice main es de las primeras versiones y esa permite videos de distinta calidad, la verison mas actual no lo permite a la fecha de hoy 28 de julio del 2026, si es modificado se mencionara en los commits.
