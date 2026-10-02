@@ -38,7 +38,7 @@ class Downloader:
 
         # Combinar con opciones específicas del item (Single o Playlist)
         opciones = {**opciones_base, **self.item.get_ydl_options()}
-
+        print(f"yt-dlp versión: {yt_dlp.version.__version__}")
         print(f"🔧 Opciones configuradas: {opciones.get('outtmpl', 'No especificada')}")
 
         try:
