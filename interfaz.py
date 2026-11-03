@@ -10,21 +10,27 @@ import os
 from items_media import Video, Playlist,Single
 from dowloader import Downloader
 
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 ## configuracion de interfaz
 ventana = tk.Tk()
 ventana.title("SUPREME YT DOWNLOADER")
 ventana.geometry("420x320")
 ventana.resizable(False, False)
-def resource_path(relative_path):
-    try:
-        
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.abspath(".")
-    return os.path.join(base_path, relative_path)
 
-ventana.iconbitmap(resource_path("icons/SupremDowloader.ico"))
+#función para cargar el icono
+ruta_icono = resource_path("icons/SupremDowloader.ico")
+if os.path.exists(ruta_icono):
+    try:
+        ventana.iconbitmap(ruta_icono)
+    except Exception as e:
+        print(f"No se pudo cargar el icono: {e}")
+
 
 
 ## intento de estilo de windows vista
